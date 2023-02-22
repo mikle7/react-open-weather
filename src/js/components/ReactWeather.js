@@ -34,12 +34,12 @@ const ReactWeather = ({
         <div className={`${containerMain}`}>
           <div className={` ${containerLeft}`}>
             <h2 className={` ${containerHeader}`}>{locationLabel}</h2>
-            {/* <Today
+            <Today
               current={current}
               unitsLabels={unitsLabels}
               lang={lang}
               theme={theme}
-            /> */}
+            />
           </div>
           <div className={`${containerRight}`}>
             <WeatherIcon
