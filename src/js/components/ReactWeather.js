@@ -41,7 +41,7 @@ const ReactWeather = ({
               theme={theme}
             />
           </div>
-          <div className="rw-container-right">
+          <div className={`${containerRight}`}>
             <WeatherIcon
               path={current.icon}
               size={120}
