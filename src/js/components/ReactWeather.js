@@ -15,6 +15,11 @@ const ReactWeather = ({
   isLoading,
   errorMessage,
   theme,
+  containerStyle,
+  containerMain,
+  containerLeft,
+  containerRight,
+  containerHeader,
 }) => {
   if (data) {
     const { forecast, current } = data;
@@ -25,10 +30,15 @@ const ReactWeather = ({
       return <div>{errorMessage}</div>;
     }
     return (
-      <StyledContainer className="rw-container" theme={theme}>
-        <div className="rw-container-main">
-          <div className="rw-container-left">
-            <h2 className="rw-container-header">{locationLabel}</h2>
+      <StyledContainer
+        className={`rw-container ${containerStyle}`}
+        theme={theme}
+      >
+        <div className={`rw-container-main ${containerMain}`}>
+          <div className={`rw-container-left ${containerLeft}`}>
+            <h2 className={`rw-container-header ${containerHeader}`}>
+              {locationLabel}
+            </h2>
             <Today
               current={current}
               unitsLabels={unitsLabels}
