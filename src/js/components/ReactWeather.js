@@ -30,12 +30,10 @@ const ReactWeather = ({
       return <div>{errorMessage}</div>;
     }
     return (
-      <div className={`rw-container ${containerStyle}`} theme={theme}>
-        <div className={`rw-container-main ${containerMain}`}>
-          <div className={`rw-container-left ${containerLeft}`}>
-            <h2 className={`rw-container-header ${containerHeader}`}>
-              {locationLabel}
-            </h2>
+      <div className={`${containerStyle}`} theme={theme}>
+        <div className={`${containerMain}`}>
+          <div className={` ${containerLeft}`}>
+            <h2 className={` ${containerHeader}`}>{locationLabel}</h2>
             <Today
               current={current}
               unitsLabels={unitsLabels}
