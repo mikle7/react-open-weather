@@ -59,7 +59,7 @@
     "webpack-dev-server": "^4.9.3"
   },
   "scripts": {
-    "build": "/node_modules/webpack/bin/webpack.js --config webpack.config.build.js",
+    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.build.js",
     "start": "webpack serve --config webpack.config.dev.js --mode development --port 5000",
     "test": "./node_modules/.bin/jest",
     "test-dev": "./node_modules/.bin/jest --watch",
