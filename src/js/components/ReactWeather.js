@@ -30,10 +30,7 @@ const ReactWeather = ({
       return <div>{errorMessage}</div>;
     }
     return (
-      <StyledContainer
-        className={`rw-container ${containerStyle}`}
-        theme={theme}
-      >
+      <div className={`rw-container ${containerStyle}`} theme={theme}>
         <div className={`rw-container-main ${containerMain}`}>
           <div className={`rw-container-left ${containerLeft}`}>
             <h2 className={`rw-container-header ${containerHeader}`}>
@@ -63,7 +60,7 @@ const ReactWeather = ({
             theme={theme}
           />
         )}
-      </StyledContainer>
+      </div>
     );
   }
   return null;
